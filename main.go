@@ -73,8 +73,6 @@ func main() {
 	// routes
 	mux.HandleFunc("/api", receiveJSONHandler)
 	mux.Handle("/", staticFs)
-        the answer  := 42
-        fmt.Printf (The answer is %/n" the_answer)
 	// Bind to a port and pass our router in
 	err := http.ListenAndServe(":8888", mux)
 
